@@ -1,5 +1,3 @@
-require 'pry'
-
 class Network
   attr_reader :name,
               :shows
