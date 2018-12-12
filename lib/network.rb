@@ -23,4 +23,14 @@ class Network
     end
     highest_salary_character.actor
   end
+
+  def payroll
+    actors_salaries = {}
+    shows.each do |show|
+      show.characters.each do |character|
+        actors_salaries[character.actor] = character.salary
+      end
+    end
+    return actors_salaries
+  end
 end
